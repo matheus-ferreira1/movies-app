@@ -1,7 +1,15 @@
 import "./App.css";
+import Header from "./components/Header/Header";
+import { useAppSelector } from "./hooks/storeHook";
 
 function App() {
-  return <h1>hello app</h1>;
+  const { darkTheme } = useAppSelector((state) => state);
+
+  return (
+    <div className={darkTheme ? "dark" : ""}>
+      <Header />
+    </div>
+  );
 }
 
 export default App;

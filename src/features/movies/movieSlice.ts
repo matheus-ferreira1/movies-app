@@ -42,7 +42,8 @@ const movieSlice = createSlice({
       }
     );
     builder.addCase(getMovies.rejected, (state, action: PayloadAction<any>) => {
-      (state.loading = false), (state.error = action.payload);
+      state.loading = false;
+      state.error = action.payload;
     });
   },
 });

@@ -7,7 +7,9 @@ function App() {
 
   return (
     <div className={darkTheme ? "dark" : ""}>
-      <Header />
+      <div className="dark:bg-gray-900 dark:text-gray-50 min-h-screen px-4 lg:px-12 pb-20">
+        <Header />
+      </div>
     </div>
   );
 }

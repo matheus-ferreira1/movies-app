@@ -1,11 +1,13 @@
 import { PayloadAction, createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
+const apiKey = import.meta.env.VITE_TMDB_KEY;
+
 export const getMovies = createAsyncThunk(
   "movies/getMovies",
   async (data, thunkApi) => {
     try {
       const response = await fetch(
-        `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_MOVIE_KEY}`
+        `https://api.themoviedb.org/3/trending/all/day?api_key=${apiKey}`
       );
       return await response.json();
     } catch (error: any) {

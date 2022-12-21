@@ -11,11 +11,11 @@ const Header = () => {
   const onToggle = () => dispatch(toggleTheme());
 
   return (
-    <header className="mb-20">
+    <header className="mb-10">
       <nav className="border-b border-gray-200 border-opacity-25 py-2.5">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <a href="#!" className="flex items-center">
-            <span className="self-center text-xl font-semibold whitespace-nowrap">
+        <div className="h-16 flex flex-wrap justify-between items-center mx-auto max-w-screen-3xl">
+          <a href="#" className="flex items-center">
+            <span className="self-center text-xl font-bold whitespace-nowrap">
               Movies
             </span>
           </a>

@@ -8,7 +8,7 @@ interface MovieCardProps {
 
 const MovieCard: FC<MovieCardProps> = ({ poster_path, overview, title }) => {
   return (
-    <div className="max-w-sm bg-white mx-auto rounded border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-sm bg-white mx-auto rounded border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 duration-100 hover:animate-pulse max-w-screen-3xl">
       <img
         src={poster_path}
         alt={title}

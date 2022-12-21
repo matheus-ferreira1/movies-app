@@ -27,14 +27,14 @@ function App() {
 
   return (
     <div className={darkTheme ? "dark" : ""}>
-      <div className="dark:bg-gray-900 dark:text-gray-50 min-h-screen px-4 lg:px-12 pb-20">
+      <div className="dark:bg-gray-900 dark:text-gray-50 min-h-screen px-4 lg:px-12 pb-20 ">
         <Header />
 
         <div className="mb-12 flex items-center justify-between">
           <SearchBox setSearchTerm={setSearchTerm} />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-10  mx-auto">
           {searchMovies &&
             searchMovies.map((movie: any) => {
               const { id, title, overview, poster_path } = movie;
